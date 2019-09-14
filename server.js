@@ -1,8 +1,8 @@
-var PORT = process.env.PORT;
 const express = require('express')
 var http = require('http')
 var app = express()
 var server = http.createServer(app)
+var port = process.env.PORT ||3000
 var io = require('socket.io').listen(server)
 app.get('/',(req,res)=>{
     res.send("Chat server is running on the port 3000")
