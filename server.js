@@ -1,4 +1,4 @@
-var PORT = process.env.PORT 
+var PORT = process.env.PORT || 5000;
 const express = require('express')
 var http = require('http')
 var app = express()
